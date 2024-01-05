@@ -1,0 +1,1581 @@
+﻿<Window x:Class="Imperium.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Imperium"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <!-- Левая рамка занимает 2/3 окна -->
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- 1 строка -->
+                <Grid Grid.Row="0" Grid.Column="0" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Text="9" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" Foreground="#eeeed2"/>
+                    <Image x:Name="cell00" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl00" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El00" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="1" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell01" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl01" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El01" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="2" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell02" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl02" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El02" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="3" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell03" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl03" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El03" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="4" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell04" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl04" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El04" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="5" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell05" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl05" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El05" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="6" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell06" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl06" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El06" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="7" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell07" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl07" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El07" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="8" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell08" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl08" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El08" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 2 строка -->
+                <Grid Grid.Row="1" Grid.Column="0" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#769656">
+                        8
+                    </TextBlock>
+                    <Image x:Name="cell10" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl10" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El10" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell11" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl11" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El11" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="2" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell12" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl12" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El12" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="3" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell13" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl13" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El13" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="4" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell14" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl14" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El14" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="5" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell15" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl15" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El15" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="6" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell16" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl16" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El16" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="7" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell17" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl17" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El17" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="8" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell18" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl18" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El18" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 3 строка -->
+                <Grid Grid.Row="2" Grid.Column="0" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#eeeed2">
+                        7
+                    </TextBlock>
+                    <Image x:Name="cell20" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl20" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="1" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell21" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl21" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El21" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="2" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell22" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl22" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El22" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="3" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell23" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl23" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El23" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="4" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell24" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl24" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El24" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="5" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell25" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl25" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El25" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="6" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell26" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl26" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El26" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="7" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell27" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl27" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El27" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="8" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell28" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl28" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El28" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 4 строка -->
+                <Grid Grid.Row="3" Grid.Column="0" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#769656">
+                        6
+                    </TextBlock>
+                    <Image x:Name="cell30" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl30" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El30" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="1" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell31" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl31" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El31" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="2" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell32" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl32" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El32" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="3" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell33" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl33" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El33" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="4" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell34" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl34" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El34" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="5" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell35" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl35" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El35" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="6" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell36" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl36" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El36" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="7" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell37" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl37" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El37" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="8" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell38" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl38" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El38" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 5 строка -->
+                <Grid Grid.Row="4" Grid.Column="0" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#eeeed2">
+                        5
+                    </TextBlock>
+                    <Image x:Name="cell40" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl40" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El40" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="1" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell41" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl41" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El41" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="2" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell42" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl42" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El42" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="3" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell43" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl43" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El43" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="4"  Background="#FEFE22" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell44" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl44" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El44" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="5" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell45" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl45" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El45" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="6" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell46" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl46" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El46" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="7" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell47" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl47" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El47" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="8" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell48" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl48" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El48" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 6 строка -->
+                <Grid Grid.Row="5" Grid.Column="0" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#769656">
+                        4
+                    </TextBlock>
+                    <Image x:Name="cell50" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl50" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El50" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="1" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell51" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl51" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El51" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="2" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell52" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl52" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El52" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="3" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell53" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl53" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El53" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="4" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell54" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl54" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El54" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="5" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell55" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl55" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El55" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="6" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell56" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl56" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El56" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="7" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell57" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl57" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El57" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="8" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell58" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl58" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El58" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 7 строка -->
+                <Grid Grid.Row="6" Grid.Column="0" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#eeeed2">
+                        3
+                    </TextBlock>
+                    <Image x:Name="cell60" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl60" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El60" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="1" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell61" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl61" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El61" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="2" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell62" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl62" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El62" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="3" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell63" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl63" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El63" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="4" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell64" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl64" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El64" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="5" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell65" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl65" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El65" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="6" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell66" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl66" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El66" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="7" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell67" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl67" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El67" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="6" Grid.Column="8" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell68" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl68" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El68" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 8 строка -->
+                <Grid Grid.Row="7" Grid.Column="0" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#769656">
+                        2
+                    </TextBlock>
+                    <Image x:Name="cell70" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl70" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El70" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="1" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell71" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl71" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El71" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="2" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell72" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl72" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El72" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="3" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell73" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl73" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El73" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="4" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell74" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl74" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El74" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="5" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell75" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl75" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El75" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="6" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell76" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl76" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El76" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="7" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell77" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl77" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El77" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="7" Grid.Column="8" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Image x:Name="cell78" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl78" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El78" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <!-- 9 строка -->
+                <Grid Grid.Row="8" Grid.Column="0" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Foreground="#eeeed2">
+                            1
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#eeeed2">
+                            a
+                        </TextBlock>
+                    </Grid>
+                    <Image x:Name="cell80" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl80" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El80" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="1" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#769656">
+                        b
+                    </TextBlock>
+                    <Image x:Name="cell81" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl81" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El81" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="2" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#eeeed2">
+                        c
+                    </TextBlock>
+                    <Image x:Name="cell82" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl82" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El82" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="3" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#769656">
+                        d
+                    </TextBlock>
+                    <Image x:Name="cell83" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl83" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El83" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="4" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#eeeed2">
+                        e
+                    </TextBlock>
+                    <Image x:Name="cell84" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl84" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El84" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="5" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#769656">
+                        f
+                    </TextBlock>
+                    <Image x:Name="cell85" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl85" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El85" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="6" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#eeeed2">
+                        g
+                    </TextBlock>
+                    <Image x:Name="cell86" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl86" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El86" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="7" Background="#eeeed2" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#769656">
+                        h
+                    </TextBlock>
+                    <Image x:Name="cell87" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl87" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El87" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="8" Grid.Column="8" Background="#769656" MouseLeftButtonUp="Grid_MouseLeftButtonUp">
+                    <TextBlock HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Foreground="#eeeed2">
+                        i
+                    </TextBlock>
+                    <Image x:Name="cell88" Margin="5" Source="Images/Warrior.png" Visibility="Visible"/>
+                    <Ellipse Name="AEl88" StrokeThickness="3" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse Name="El88" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Fill="#00000000" Stroke="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Background="#302e2b" BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
